@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 7, 2016 9:53:07 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.verizon.cache.domain.PushToCache" table="PushToCache">
+        <composite-id name="id" class="com.verizon.cache.domain.PushToCacheId">
+            <key-property name="htmlFileName" type="string">
+                <column name="HtmlFileName" length="400" />
+            </key-property>
+            <key-property name="fieldId" type="string">
+                <column name="FieldId" length="100" />
+            </key-property>
+            <key-property name="parameterName" type="string">
+                <column name="ParameterName" length="100" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
